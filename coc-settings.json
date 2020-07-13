@@ -1,0 +1,23 @@
+{
+  "diagnostic.errorSign": "●",
+  "diagnostic.warningSign": "●",
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "python",
+    "graphql",
+    "html",
+    "yaml",
+    "json"
+  ],
+
+  // python config
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+
+  // tsserver config
+  "javascript.suggestionActions.enabled": false
+}
