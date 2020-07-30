@@ -31,6 +31,7 @@ Plug 'mhinz/vim-startify'
 Plug 'moll/vim-bbye'
 Plug 'ryanoasis/vim-devicons'
 Plug 'aymericbeaumet/vim-symlink'
+Plug 'honza/vim-snippets'
 
 "" Formatting
 Plug 'tpope/vim-surround'
