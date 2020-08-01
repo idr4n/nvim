@@ -13,6 +13,7 @@
     "yaml",
     "json"
   ],
+  "snippets.userSnippetsDirectory": "~/.config/nvim/snips",
 
   // python config
   "python.linting.enabled": true,
