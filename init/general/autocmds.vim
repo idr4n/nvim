@@ -14,6 +14,12 @@ augroup markdow_files
   autocmd FileType markdown setlocal commentstring=<!--\ %s\ -->
 augroup END
 
+" javascript autocmds
+augroup js_files
+  autocmd!
+  autocmd FileType javascript inoremap ,= <space>=><space>
+augroup END
+
 " " set numberwidth conditional on window width
 augroup center_buffer
   autocmd!
