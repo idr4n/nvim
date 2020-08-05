@@ -15,11 +15,16 @@ let g:fzf_action = {
 
 nmap ,<tab> <plug>(fzf-maps-n)
 xmap ,<tab> <plug>(fzf-maps-x)
-nmap <C-P>          :Files<CR>
-nmap <C-T>          :History<CR>
-nmap <leader>bl     :Buffers<CR>
-nmap <leader>s      :BLines<CR>
-nmap <leader>r      :Rg<CR>
+nnoremap <silent> <expr> <C-P> (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":Files\<cr>"
+nnoremap <silent> <expr> <C-T> (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":History\<cr>"
+nnoremap <silent> <expr> <leader>bl (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":Buffers\<cr>"
+nnoremap <silent> <expr> <leader>s (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":BLines\<cr>"
+nnoremap <silent> <expr> <leader>r (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":Rg\<cr>"
+" nmap <C-P>          :Files<CR>
+" nmap <C-T>          :History<CR>
+" nmap <leader>bl     :Buffers<CR>
+" nmap <leader>s      :BLines<CR>
+" nmap <leader>r      :Rg<CR>
 
 " Path completion with custom source command
 inoremap <expr> <c-x><c-f> fzf#vim#complete#path('rg --files')
