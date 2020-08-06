@@ -4,7 +4,8 @@ let g:rnvimr_ex_enable = 1
 " Make Neovim wipe the buffers corresponding to the files deleted by Ranger
 let g:rnvimr_enable_bw = 1
 
-nnoremap <silent> ,r :RnvimrToggle<CR>
+nnoremap <silent> <expr> ,r (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":RnvimrToggle<CR>"
+" nnoremap <silent> ,r :RnvimrToggle<CR>
 tnoremap <silent> ,r <C-\><C-n>:RnvimrToggle<CR>
 
 let g:rnvimr_layout = { 'relative': 'editor',
