@@ -20,7 +20,7 @@ source $HOME/.config/nvim/init/plug-config/vim-easymotion.vim       " Plug 'easy
 source $HOME/.config/nvim/init/plug-config/quickscope.vim           " Plug 'unblevable/quick-scope'
 " source $HOME/.config/nvim/init/plug-config/vim-dirvish.vim          " Plug 'justinmk/vim-dirvish'
 source $HOME/.config/nvim/init/plug-config/rnvimr.vim               " Plug 'kevinhwang91/rnvimr'
-source $HOME/.config/nvim/init/plug-config/nerdtree.vim             " Plug 'justinmk/vim-dirvish'
+" source $HOME/.config/nvim/init/plug-config/nerdtree.vim             " Plug 'justinmk/vim-dirvish'
 " source $HOME/.config/nvim/init/plug-config/defx.vim                 " Plug 'justinmk/vim-dirvish'
 
 "" Setups

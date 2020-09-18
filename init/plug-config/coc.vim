@@ -148,3 +148,23 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 vmap <leader><s-f>  <Plug>(coc-format-selected)
 nmap <leader><s-f>  <Plug>(coc-format-selected)
 
+" coc-explorer
+map <silent> <C-n> :CocCommand explorer<CR>
+map <silent> <C-f> :CocCommand explorer --no-toggle<CR>
+
+function! s:coc_explorer_leave()
+  if winwidth(0) > 150
+    setlocal numberwidth=20 foldcolumn=12
+    highlight FoldColumn guibg=b:bg_color guifg=b:bg_color
+  elseif winwidth(0) > 120
+    setlocal numberwidth=10 foldcolumn=10
+    highlight FoldColumn guibg=b:bg_color
+  elseif winwidth(0) > 85
+    setlocal numberwidth=4 foldcolumn=0
+    highlight FoldColumn guibg=b:bg_color
+  else
+    setlocal numberwidth=3 foldcolumn=0
+  endif
+endfunction
+
+autocmd! User CocExplorerQuitPost nested call <SID>coc_explorer_leave()
