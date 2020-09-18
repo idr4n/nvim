@@ -5,6 +5,7 @@ let g:goyo_linenr = 1
 
 " nmap <leader>c :Goyo<CR>:highlight LineNr ctermfg=240<CR>
 nmap <leader>gg :Goyo<CR>
+
 function! s:goyo_leave()
   syntax off
   syntax on
