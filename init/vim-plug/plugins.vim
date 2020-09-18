@@ -21,8 +21,8 @@ Plug 'haya14busa/incsearch-easymotion.vim'
 Plug 'haya14busa/incsearch-fuzzy.vim'
 " Plug 'justinmk/vim-dirvish'
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
-Plug 'preservim/nerdtree', { 'on': [ 'NERDTreeToggle', 'NERDTreeFind' ] }
-Plug 'Xuyuanp/nerdtree-git-plugin'
+" Plug 'preservim/nerdtree', { 'on': [ 'NERDTreeToggle', 'NERDTreeFind' ] }
+" Plug 'Xuyuanp/nerdtree-git-plugin'
 " Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 
 "" Setups
