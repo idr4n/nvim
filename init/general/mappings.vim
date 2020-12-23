@@ -17,9 +17,9 @@ nnoremap <Leader>fs :w<CR>
 " nnoremap j gj
 
 " Implements typewriter mode (use scrollfix plugin instead!)
-nnoremap j gjzz
-nnoremap k gkzz
-inoremap <CR> <CR><C-O>zz
+" nnoremap j gjzz
+" nnoremap k gkzz
+" inoremap <CR> <CR><C-O>zz
 
 " Jump to start and end of line using the home row keys
 map H ^
