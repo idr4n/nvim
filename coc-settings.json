@@ -14,6 +14,7 @@
     "json"
   ],
   "snippets.userSnippetsDirectory": "~/.config/nvim/snips",
+  "suggest.autoTrigger": "none",
 
   // python config
   "python.linting.enabled": true,
