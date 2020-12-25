@@ -19,7 +19,7 @@ set expandtab                         " inserts spaces when tab key is pressed
 set autoindent                        " Copy indent from current line when starting a new line
 set smartindent                       " smart autoindenting when starting a new line.
 set breakindent                       " Every wrapped line will continue visually indented
-set conceallevel=2                    " how text with the 'conceal' syntax attribute is shown
+" set conceallevel=2                    " how text with the 'conceal' syntax attribute is shown
 set clipboard=unnamed                 " Use system clipboard
 set backspace=indent,eol,start        " Enable Backspace
 set noshowmode                        " don't put a message on the last line
