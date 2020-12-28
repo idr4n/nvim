@@ -66,7 +66,9 @@ nnoremap g# g#N
 vnoremap ,/ y<C-O>/<C-R>"<CR>
 
 " Duplicate line and comment old line out
-nmap gcy gccyypgcc
+nmap gg gccyypgcc
+" Duplicate and comment selection
+vmap ggy gcgvyPgvgc
 
 " Add blank line up and down using unimpaired commands
 nmap <silent> ,l ]<space>[<space>
