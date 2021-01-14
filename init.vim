@@ -6,10 +6,10 @@ source $HOME/.config/nvim/init/general/format.vim      " general formatting
 source $HOME/.config/nvim/init/general/autocmds.vim    " general autocmds (autospelling, run files, etc.)
 
 " Themes settings
-" source $HOME/.config/nvim/init/theme-config/base16-vim.vim          " Plug 'chriskempson/base16-vim'
+source $HOME/.config/nvim/init/theme-config/base16-vim.vim          " Plug 'chriskempson/base16-vim'
 " source $HOME/.config/nvim/init/theme-config/material.vim            " Plug 'kaicataldo/material.vim'
 " source $HOME/.config/nvim/init/theme-config/gruvbox-material.vim    " Plug 'sainnhe/gruvbox-material'
-source $HOME/.config/nvim/init/theme-config/gruvbox.vim              " Plug 'gruvbox-community/gruvbox'
+" source $HOME/.config/nvim/init/theme-config/gruvbox.vim              " Plug 'gruvbox-community/gruvbox'
 " source $HOME/.config/nvim/init/theme-config/colors-off.vim           " Plug 'pbrisbin/vim-colors-off'
 
 " Plugins settings
@@ -24,10 +24,11 @@ source $HOME/.config/nvim/init/plug-config/rnvimr.vim               " Plug 'kevi
 " source $HOME/.config/nvim/init/plug-config/defx.vim                 " Plug 'justinmk/vim-dirvish'
 
 "" Setups
-" source $HOME/.config/nvim/init/plug-config/scrollfix.vim            " Plug 'vim-scripts/scrollfix'
+source $HOME/.config/nvim/init/plug-config/scrollfix.vim            " Plug 'vim-scripts/scrollfix'
 source $HOME/.config/nvim/init/plug-config/vim-startify.vim         " Plug 'mhinz/vim-startify'
 source $HOME/.config/nvim/init/plug-config/devicons.vim             " Plug 'ryanoasis/vim-devicons'
 source $HOME/.config/nvim/init/plug-config/easyclip.vim             " Plug 'svermeulen/vim-easyclip'
+source $HOME/.config/nvim/init/plug-config/delimitMate.vim             " Plug 'Raimondi/delimitMate'
 
 "" Formatting
 source $HOME/.config/nvim/init/plug-config/vim-easy-align.vim       " Plug 'junegunn/vim-easy-align'

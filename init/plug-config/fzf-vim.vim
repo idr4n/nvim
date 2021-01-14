@@ -1,11 +1,13 @@
 " Settings for fzf.vim
 
-" Note: In neovim, no line numbers and foldcolumns are disabled
-" which are not automatically disabled by fzf in neovim
-augroup disable_in_Term
-  au TermOpen * setlocal nonumber norelativenumber foldcolumn=0 signcolumn=no
-  au TermOpen * call clearmatches() " clears ColorColum highlight
-augroup END
+if has('nvim')
+  " Note: In neovim, no line numbers and foldcolumns are disabled
+  " which are not automatically disabled by fzf in neovim
+  augroup disable_in_Term
+    au TermOpen * setlocal nonumber norelativenumber foldcolumn=0 signcolumn=no
+    au TermOpen * call clearmatches() " clears ColorColum highlight
+  augroup END
+endif
 
 
 " This is the default extra key bindings
@@ -19,6 +21,7 @@ nnoremap <silent> <expr> <C-P> (expand('%') =~ 'coc-explorer' ? "\<c-w>\<c-w>" :
 nnoremap <silent> <expr> <C-T> (expand('%') =~ 'coc-explorer' ? "\<c-w>\<c-w>" : '').":History\<cr>"
 " nnoremap <silent> <expr> <C-P> (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":Files\<cr>"
 " nnoremap <silent> <expr> <C-T> (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":History\<cr>"
+nnoremap <silent> <expr> <C-B> (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":Buffers\<cr>"
 nnoremap <silent> <expr> <leader>bl (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":Buffers\<cr>"
 nnoremap <silent> <expr> <leader>s (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":BLines\<cr>"
 nnoremap <silent> <expr> <leader>r (expand('%') =~ 'NERD_tree' ? "\<c-w>\<c-w>" : '').":Rg\<cr>"

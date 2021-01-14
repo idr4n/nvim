@@ -30,7 +30,11 @@ if has('nvim')
 endif
 
 " Use <c-space> to trigger completion.
-inoremap <silent><expr> <c-space> coc#refresh()
+if has('nvim')
+  inoremap <silent><expr> <c-space> coc#refresh()
+else
+  inoremap <silent><expr> <c-@> coc#refresh()
+endif
 
 " Use <c-l> to confirm completion, `<C-g>u` means break undo chain at current
 " position. Coc only does snippet and additional edit on confirm.
@@ -75,6 +79,7 @@ nnoremap <silent> K :call <SID>show_documentation()<CR>
 " Symbol renaming.
 " nmap <leader>rn <Plug>(coc-rename)
 nmap <F2> <Plug>(coc-rename)
+nmap ,d <Plug>(coc-rename)
 
 " Formatting selected code.
 xmap <leader>F  <Plug>(coc-format-selected)

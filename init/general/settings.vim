@@ -18,6 +18,7 @@ set shiftwidth=2                      " number of space characters inserted for 
 set expandtab                         " inserts spaces when tab key is pressed
 set autoindent                        " Copy indent from current line when starting a new line
 set smartindent                       " smart autoindenting when starting a new line.
+set cindent                           "Like smartindent, but stricter and more customisable
 set breakindent                       " Every wrapped line will continue visually indented
 " set conceallevel=2                    " how text with the 'conceal' syntax attribute is shown
 set clipboard=unnamed                 " Use system clipboard
@@ -37,3 +38,6 @@ set autowrite                         " saves buffer when changing files
 set autoread                          " Always reload buffer when external changes detected
 set nohlsearch                        " Turn off highlighting until next search
 " set cmdheight=1                       " Set the cmdheight line to 1 only
+set guicursor=                        " disables the vertical cursos in neovim
+let &t_Cs = "\e[4:3m"                 " udercurl for spelling checking
+let &t_Ce = "\e[4:0m"                 " udercurl for spelling checking

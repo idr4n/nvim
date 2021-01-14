@@ -15,11 +15,18 @@
   ],
   "snippets.userSnippetsDirectory": "~/.config/nvim/snips",
   "suggest.autoTrigger": "none",
+  "signature.enable": false,
 
   // python config
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
   "python.jediEnabled": false,
+  "python.autoComplete.addBrackets": true,
+  "python.linting.pylintArgs": [
+    "--disable=C0111",
+    "--load-plugins",
+    "pylint_django"
+  ],
 
   // tsserver config
   "javascript.suggestionActions.enabled": false,
@@ -28,7 +35,7 @@
   "explorer.width": 27,
   "explorer.icon.enableNerdfont": true,
   "explorer.previewAction.onHover": false,
-  "explorer.keyMappings": {
+  "explorer.keyMappings.global": {
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
   }
