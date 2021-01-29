@@ -19,8 +19,9 @@ Plug 'easymotion/vim-easymotion'
 Plug 'haya14busa/incsearch.vim'
 Plug 'haya14busa/incsearch-easymotion.vim'
 Plug 'haya14busa/incsearch-fuzzy.vim'
-" Plug 'justinmk/vim-dirvish'
-Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+Plug 'justinmk/vim-dirvish'
+Plug 'kristijanhusak/vim-dirvish-git'
+" Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 " Plug 'preservim/nerdtree', { 'on': [ 'NERDTreeToggle', 'NERDTreeFind' ] }
 " Plug 'Xuyuanp/nerdtree-git-plugin'
 " Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -33,6 +34,7 @@ Plug 'moll/vim-bbye'
 Plug 'ryanoasis/vim-devicons'
 Plug 'aymericbeaumet/vim-symlink'
 Plug 'honza/vim-snippets'
+Plug 'metakirby5/codi.vim'
 
 "" Formatting
 Plug 'tpope/vim-surround'

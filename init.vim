@@ -18,8 +18,9 @@ source $HOME/.config/nvim/init/plug-config/fzf-vim.vim              " Plug 'june
 source $HOME/.config/nvim/init/plug-config/vim-sneak.vim            " Plug 'justinmk/vim-sneak'
 source $HOME/.config/nvim/init/plug-config/vim-easymotion.vim       " Plug 'easymotion/vim-easymotion'
 source $HOME/.config/nvim/init/plug-config/quickscope.vim           " Plug 'unblevable/quick-scope'
-" source $HOME/.config/nvim/init/plug-config/vim-dirvish.vim          " Plug 'justinmk/vim-dirvish'
-source $HOME/.config/nvim/init/plug-config/rnvimr.vim               " Plug 'kevinhwang91/rnvimr'
+source $HOME/.config/nvim/init/plug-config/vim-dirvish.vim          " Plug 'justinmk/vim-dirvish'
+source $HOME/.vim/init/plug-config/netrw-Lex.vim                    " Config for netrw used with Lex command
+" source $HOME/.config/nvim/init/plug-config/rnvimr.vim               " Plug 'kevinhwang91/rnvimr'
 " source $HOME/.config/nvim/init/plug-config/nerdtree.vim             " Plug 'justinmk/vim-dirvish'
 " source $HOME/.config/nvim/init/plug-config/defx.vim                 " Plug 'justinmk/vim-dirvish'
 
