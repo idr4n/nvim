@@ -24,7 +24,9 @@ Plug 'kristijanhusak/vim-dirvish-git'
 " Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 " Plug 'preservim/nerdtree', { 'on': [ 'NERDTreeToggle', 'NERDTreeFind' ] }
 " Plug 'Xuyuanp/nerdtree-git-plugin'
-" Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'kristijanhusak/defx-icons'
+Plug 'kristijanhusak/defx-git'
 
 "" Setups
 " Plug 'vim-scripts/scrollfix'

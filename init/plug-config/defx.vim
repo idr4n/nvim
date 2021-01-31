@@ -21,9 +21,9 @@ call defx#custom#column('icon', {
       \ 'root_icon': ' ',
       \ })
 
-nnoremap <silent> ,e :Defx -toggle -vertical-preview<CR>
+nnoremap <silent> ,e :Defx -columns=git:icons:mark:filename:type -toggle -vertical-preview<CR>
 " nnoremap <silent> ,f :Defx `expand('%:p:h')` -search=`expand('%:p')`<CR>
-nnoremap <silent> ,f :Defx -search=`expand('%:p')` -vertical-preview<CR>
+nnoremap <silent> ,f :Defx -columns=git:icons:mark:filename:type -search=`expand('%:p')` -vertical-preview<CR>
 
 autocmd FileType defx call s:defx_my_settings()
 	function! s:defx_my_settings() abort
